@@ -74,13 +74,13 @@ class TgUploader:
 
     def __upload_file(self, up_path, file_, dirpath):
         if CUSTOM_FILENAME is not None:
-            cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>\n\n<b><a href='https://t.me/+K1Z4kS0Cf8c3ZDU0'>Movies</a> | <a href='https://t.me/+DOvLtPVH3wllNDZk'>Series</a> | <a href='https://t.me/+EHBqUrMHnglmZWY8'>Songs</a> | <a href='https://t.me/+fXhzeT01WiwyZTZk'><a/>WWE</b>"
+            cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>\n\n<b><a href='https://t.me/+K1Z4kS0Cf8c3ZDU0'>Movies</a> | <a href='https://t.me/+DOvLtPVH3wllNDZk'>Series</a> | <a href='https://t.me/+EHBqUrMHnglmZWY8'>Songs</a> | <a href='https://t.me/+fXhzeT01WiwyZTZk'></a>WWE</b>"
             file_ = f"{CUSTOM_FILENAME} {file_}"
             new_path = ospath.join(dirpath, file_)
             osrename(up_path, new_path)
             up_path = new_path
         else:
-            cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>\n\n<b><a href='https://t.me/+K1Z4kS0Cf8c3ZDU0'>Movies</a> | <a href='https://t.me/+DOvLtPVH3wllNDZk'>Series</a> | <a href='https://t.me/+EHBqUrMHnglmZWY8'>Songs</a> | <a href='https://t.me/+fXhzeT01WiwyZTZk'>WWE<a/></b>"
+            cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>\n\n<b><a href='https://t.me/+K1Z4kS0Cf8c3ZDU0'>Movies</a> | <a href='https://t.me/+DOvLtPVH3wllNDZk'>Series</a> | <a href='https://t.me/+EHBqUrMHnglmZWY8'>Songs</a> | <a href='https://t.me/+fXhzeT01WiwyZTZk'>WWE</a></b>"
         notMedia = False
         thumb = self.__thumb
         self.__is_corrupted = False
