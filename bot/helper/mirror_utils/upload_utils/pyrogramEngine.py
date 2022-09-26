@@ -80,7 +80,7 @@ class TgUploader:
             osrename(up_path, new_path)
             up_path = new_path
         else:
-            cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>\n<b><a href='https://t.me/+K1Z4kS0Cf8c3ZDU0'>Movies</a> | <a href='https://t.me/+DOvLtPVH3wllNDZk'>Series</a> | <a href='https://t.me/+EHBqUrMHnglmZWY8'>Songs</a> | <a href='https://t.me/+fXhzeT01WiwyZTZk'>WWE</b>"
+            cap_mono = f"<{CAPTION_FONT}>{file_}</{CAPTION_FONT}>\n<b><a href='https://t.me/+K1Z4kS0Cf8c3ZDU0'>Movies</a> | <a href='https://t.me/+DOvLtPVH3wllNDZk'>Series</a> | <a href='https://t.me/+EHBqUrMHnglmZWY8'>Songs</a> | <a href='https://t.me/+fXhzeT01WiwyZTZk'>WWE<a/></b>"
         notMedia = False
         thumb = self.__thumb
         self.__is_corrupted = False
